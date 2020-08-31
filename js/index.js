@@ -25,21 +25,18 @@ document.querySelector('.eq').addEventListener('click', calculation);
 
 function calculation(){
     display.value = eval(display.value);
-
 }
 
 document.querySelector('.clear').addEventListener('click', clear);
 
 function clear(){
     display.value = "";
-
 }
 
 document.querySelector('.backspace').addEventListener('click', backspace);
 
 function backspace(){
     display.value = display.value.slice(0, -1);
-
 }
 
 document.querySelector('.sqrt').addEventListener('click', squareRootCalculation);
@@ -47,7 +44,6 @@ document.querySelector('.sqrt').addEventListener('click', squareRootCalculation)
 function squareRootCalculation(){
     const sqrtDigit = Math.sqrt(display.value);
     display.value = sqrtDigit;
-
 }
 
 document.querySelector('.decimal').addEventListener('click', decimalPoint);
@@ -61,7 +57,6 @@ document.querySelector('.tangens').addEventListener('click', tangensCalculation)
 function tangensCalculation(){
     const tanDigit = Math.tan(display.value*Math.PI/180);
     display.value = tanDigit;
-
 }
 
 // function calculation(oper) {
